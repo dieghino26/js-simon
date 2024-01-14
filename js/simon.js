@@ -27,13 +27,23 @@ button.addEventListener("click", function() {
         timer.innerText = --seconds;
         if(seconds === 0){
             clearInterval(countdown);
-            timer.classList.add("d-none")
-            numbers.classList.add("d-none")
+            timer.classList.add("d-none");
+            numbers.classList.add("d-none");
+            const message = "scrivi i numeri che hai appena visto";
+            
+            const playerNumbers = prompt(message);
+            if (playerNumbers === randomNumbers) {
+                alert("Hai vinto!");
+            } else{
+                alert("Hai perso!");
+            };
             
         } ;
     }, 1000);
     
     timer.innerText = seconds;
+
+    //viene richiesto al giocatore i numeri randomici visualizzati in pagina
 
         
 
