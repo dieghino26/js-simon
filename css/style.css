@@ -9,3 +9,8 @@
     align-items: center;
     min-height: 800px;
 }
+
+#numbers{
+    font-size: 3rem;
+    font-weight: bold;
+}
